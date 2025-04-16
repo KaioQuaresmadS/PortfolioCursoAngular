@@ -24,12 +24,9 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              },
-              "src/favicon.ico",
-              "src/assets"
+              }
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
             "scripts": [],
@@ -93,7 +90,6 @@
               }
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -103,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "6c2374c9-44a8-416d-8113-e4080648bb76"
+    "analytics": "8bf116ce-d2f7-4698-b283-79c891c401b0"
   }
 }
