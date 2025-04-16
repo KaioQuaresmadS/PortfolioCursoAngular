@@ -1,5 +1,8 @@
+<<<<<<< HEAD
+=======
 /* You can add global styles to this file, and also import other style files */
 
+>>>>>>> main
 html,
 body {
     height: 100%;
@@ -8,7 +11,13 @@ body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+<<<<<<< HEAD
+    background: url(../../assets/img/office-one.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+=======
     background: var(--black);
+>>>>>>> main
 }
 
 h1,
@@ -26,7 +35,11 @@ a {
 }
 
 p {
+<<<<<<< HEAD
+    color: var(--white);
+=======
     color: var(--grey);
+>>>>>>> main
     font-size: 16px;
     margin: 10px 0;
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PortfolioAngular": {
+    "CrudAngular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/portfolio-angular",
+            "outputPath": "dist/crud-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -23,16 +23,18 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "src/assets",
-                "output": "assets"
-              },
-              "src/favicon.ico"
+                "input": "public"
+              }
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/azure-blue.css",
-              "src/styles.scss"
+              "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -62,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "PortfolioAngular:build:production"
+              "buildTarget": "CrudAngular:build:production"
             },
             "development": {
-              "buildTarget": "PortfolioAngular:build:development"
+              "buildTarget": "CrudAngular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,14 +86,11 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "src/assets",
-                "output": "assets"
-              },
-              "src/favicon.ico"
+                "input": "public"
+              }
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/azure-blue.css",
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -99,12 +98,7 @@
       }
     }
   },
-  "schematics": {
-    "@schematics/angular:component": {
-      "style": "scss"
-    }
-  },
   "cli": {
-    "analytics": "cfcd098e-dc73-4922-9d99-0750766eb78c"
+    "analytics": "8bf116ce-d2f7-4698-b283-79c891c401b0"
   }
 }
